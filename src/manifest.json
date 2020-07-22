@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "my-command",
+      "identifier": "newskit.my-command-identifier",
+      "script": "./my-command.js"
+    },
+    {
+      "name": "Update Borders",
+      "identifier": "newskit.border",
+      "script": "./updateBorders.js"
+    },
+    {
+      "name": "UpdateTextColors",
+      "identifier": "newskit.textcolors",
+      "script": "./updateTextColors.js"
+    }
+  ],
+  "menu": {
+    "title": "newskit",
+    "items": [
+      "newskit.border",
+      "newskit.textcolors"
+    ]
+  }
+}
